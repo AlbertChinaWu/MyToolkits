@@ -19,6 +19,10 @@ public:
     void InitConnect();
 
 public Q_SLOTS:
+    /// @brief 菜单响应
+    /// @brief 文件菜单
+    void SlotQuitMainWindow(bool const checked = false);
+    /// @brief 设计模式菜单
     void SlotDpSimpleFactory(bool const checked = false);
 
 private:
