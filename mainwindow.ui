@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>设计模式</string>
+    </property>
+    <widget class="QMenu" name="menuCreation">
+     <property name="title">
+      <string>创建型模式</string>
+     </property>
+     <addaction name="actionSimpleFactory"/>
+     <addaction name="actionFactory"/>
+     <addaction name="actionAbstractFactory"/>
+     <addaction name="separator"/>
+     <addaction name="actionSingleton"/>
+     <addaction name="actionBuilder"/>
+     <addaction name="separator"/>
+     <addaction name="actionPrototype"/>
+    </widget>
+    <widget class="QMenu" name="menuStructural">
+     <property name="title">
+      <string>结构型模式</string>
+     </property>
+     <addaction name="actionAdapter"/>
+     <addaction name="actionBridge"/>
+     <addaction name="actionFilter"/>
+     <addaction name="actionComposite"/>
+     <addaction name="actionDecorator"/>
+     <addaction name="actionFacade"/>
+     <addaction name="actionFlyweight"/>
+     <addaction name="actionProxy"/>
+    </widget>
+    <widget class="QMenu" name="menuBehavioral">
+     <property name="title">
+      <string>行为型模式</string>
+     </property>
+     <addaction name="actionChainOfResponsibility"/>
+     <addaction name="actionCommand"/>
+     <addaction name="actionInterpreter"/>
+     <addaction name="actionIterator"/>
+     <addaction name="actionMediator"/>
+     <addaction name="actionMemento"/>
+     <addaction name="actionObserver"/>
+     <addaction name="actionState"/>
+     <addaction name="actionNullObject"/>
+     <addaction name="actionStrategy"/>
+     <addaction name="actionTemplate"/>
+     <addaction name="actionVistor"/>
+    </widget>
+    <widget class="QMenu" name="menuJ2EE">
+     <property name="title">
+      <string>J2EE模式</string>
+     </property>
+     <addaction name="actionMvc"/>
+     <addaction name="actionBusinessDelegate"/>
+     <addaction name="actionCompositeEntity"/>
+     <addaction name="actionDataAccessObj"/>
+     <addaction name="actionFrontController"/>
+     <addaction name="actionInterceptingFilter"/>
+     <addaction name="actionServiceLocator"/>
+     <addaction name="actionTransferObj"/>
+    </widget>
+    <addaction name="menuCreation"/>
+    <addaction name="menuStructural"/>
+    <addaction name="menuBehavioral"/>
+    <addaction name="separator"/>
+    <addaction name="menuJ2EE"/>
+   </widget>
+   <widget class="QMenu" name="menuBaseOnCpp">
+    <property name="title">
+     <string>C++基础</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFiles">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menuBinFileOpt">
+     <property name="title">
+      <string>二进制文件</string>
+     </property>
+     <addaction name="actionQtBinFileOpt"/>
+     <addaction name="actionStdBinFileOpt"/>
+    </widget>
+    <addaction name="menuBinFileOpt"/>
+    <addaction name="actionRenixFileOpt"/>
+    <addaction name="actionTextOpt"/>
+    <addaction name="actionOfficeOpt"/>
+    <addaction name="actionFileEncodeChange"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuNetwork">
+    <property name="title">
+     <string>网络传输</string>
+    </property>
+    <widget class="QMenu" name="menuFtp">
+     <property name="title">
+      <string>Ftp</string>
+     </property>
+     <addaction name="actionFtpServer"/>
+     <addaction name="actionFtpClient"/>
+    </widget>
+    <widget class="QMenu" name="menuHttp">
+     <property name="title">
+      <string>Http(s)</string>
+     </property>
+     <addaction name="actionHttpServer"/>
+     <addaction name="actionHttpClient"/>
+    </widget>
+    <addaction name="menuFtp"/>
+    <addaction name="menuHttp"/>
+    <addaction name="actionCom"/>
+   </widget>
+   <widget class="QMenu" name="menuTestOpt">
+    <property name="title">
+     <string>测试</string>
+    </property>
+    <addaction name="actionDllTest"/>
+    <addaction name="actionUnitTest"/>
+   </widget>
+   <addaction name="menuFiles"/>
+   <addaction name="menuBaseOnCpp"/>
+   <addaction name="menu"/>
+   <addaction name="menuNetwork"/>
+   <addaction name="menuTestOpt"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actiondd_5">
+   <property name="text">
+    <string>dd</string>
+   </property>
+  </action>
+  <action name="actionFactory">
+   <property name="text">
+    <string>工厂模式</string>
+   </property>
+  </action>
+  <action name="actionAbstractFactory">
+   <property name="text">
+    <string>抽象工厂模式</string>
+   </property>
+  </action>
+  <action name="actionSingleton">
+   <property name="text">
+    <string>单例模式</string>
+   </property>
+  </action>
+  <action name="actionBuilder">
+   <property name="text">
+    <string>建造者模式</string>
+   </property>
+  </action>
+  <action name="actionPrototype">
+   <property name="text">
+    <string>原型模式</string>
+   </property>
+  </action>
+  <action name="actioncc_6">
+   <property name="text">
+    <string>cc</string>
+   </property>
+  </action>
+  <action name="actioncc_7">
+   <property name="text">
+    <string>cc</string>
+   </property>
+  </action>
+  <action name="actioncc_8">
+   <property name="text">
+    <string>cc</string>
+   </property>
+  </action>
+  <action name="actioncc_9">
+   <property name="text">
+    <string>cc</string>
+   </property>
+  </action>
+  <action name="actionAdapter">
+   <property name="text">
+    <string>适配器模式</string>
+   </property>
+  </action>
+  <action name="actionBridge">
+   <property name="text">
+    <string>桥接模式</string>
+   </property>
+  </action>
+  <action name="actionFilter">
+   <property name="text">
+    <string>过滤器模式</string>
+   </property>
+  </action>
+  <action name="actionComposite">
+   <property name="text">
+    <string>组合模式</string>
+   </property>
+  </action>
+  <action name="actionDecorator">
+   <property name="text">
+    <string>装饰模式</string>
+   </property>
+  </action>
+  <action name="actionFacade">
+   <property name="text">
+    <string>外观模式</string>
+   </property>
+  </action>
+  <action name="actionFlyweight">
+   <property name="text">
+    <string>享元模式</string>
+   </property>
+  </action>
+  <action name="actionProxy">
+   <property name="text">
+    <string>代理模式</string>
+   </property>
+  </action>
+  <action name="actioncc_18">
+   <property name="text">
+    <string>cc</string>
+   </property>
+  </action>
+  <action name="actioncc_19">
+   <property name="text">
+    <string>cc</string>
+   </property>
+  </action>
+  <action name="actioncc_20">
+   <property name="text">
+    <string>cc</string>
+   </property>
+  </action>
+  <action name="actionChainOfResponsibility">
+   <property name="text">
+    <string>责任链模式</string>
+   </property>
+  </action>
+  <action name="actionCommand">
+   <property name="text">
+    <string>命令模式</string>
+   </property>
+  </action>
+  <action name="actionInterpreter">
+   <property name="text">
+    <string>解释器模式</string>
+   </property>
+  </action>
+  <action name="actionIterator">
+   <property name="text">
+    <string>迭代器模式</string>
+   </property>
+  </action>
+  <action name="actionMediator">
+   <property name="text">
+    <string>中介者模式</string>
+   </property>
+  </action>
+  <action name="actionMemento">
+   <property name="text">
+    <string>备忘录模式</string>
+   </property>
+  </action>
+  <action name="actionObserver">
+   <property name="text">
+    <string>观察者模式</string>
+   </property>
+  </action>
+  <action name="actionState">
+   <property name="text">
+    <string>状态模式</string>
+   </property>
+  </action>
+  <action name="actionNullObject">
+   <property name="text">
+    <string>空对象模式</string>
+   </property>
+  </action>
+  <action name="actionStrategy">
+   <property name="text">
+    <string>策略模式</string>
+   </property>
+  </action>
+  <action name="actionTemplate">
+   <property name="text">
+    <string>模板模式</string>
+   </property>
+  </action>
+  <action name="actionVistor">
+   <property name="text">
+    <string>访问者模式</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>cc</string>
+   </property>
+  </action>
+  <action name="actionMvc">
+   <property name="text">
+    <string>MVC模式</string>
+   </property>
+  </action>
+  <action name="actionBusinessDelegate">
+   <property name="text">
+    <string>业务代表模式</string>
+   </property>
+  </action>
+  <action name="actionCompositeEntity">
+   <property name="text">
+    <string>组合实体模式</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionSimpleFactory">
+   <property name="text">
+    <string>简单工厂模式</string>
+   </property>
+  </action>
+  <action name="actionDataAccessObj">
+   <property name="text">
+    <string>数据访问对象模式</string>
+   </property>
+  </action>
+  <action name="actionFrontController">
+   <property name="text">
+    <string>前端控制器模式</string>
+   </property>
+  </action>
+  <action name="actionInterceptingFilter">
+   <property name="text">
+    <string>拦截过滤器模式</string>
+   </property>
+  </action>
+  <action name="actionServiceLocator">
+   <property name="text">
+    <string>服务定位器模式</string>
+   </property>
+  </action>
+  <action name="actionTransferObj">
+   <property name="text">
+    <string>传输对象模式</string>
+   </property>
+  </action>
+  <action name="actionRenixFileOpt">
+   <property name="text">
+    <string>Renix文件</string>
+   </property>
+  </action>
+  <action name="actionTextOpt">
+   <property name="text">
+    <string>普通文本文件</string>
+   </property>
+  </action>
+  <action name="actionOfficeOpt">
+   <property name="text">
+    <string>Office文档文件</string>
+   </property>
+  </action>
+  <action name="actionFileEncodeChange">
+   <property name="text">
+    <string>文件编码格式转换</string>
+   </property>
+  </action>
+  <action name="actionCom">
+   <property name="text">
+    <string>Com</string>
+   </property>
+  </action>
+  <action name="actionFtpServer">
+   <property name="text">
+    <string>服务端</string>
+   </property>
+  </action>
+  <action name="actionFtpClient">
+   <property name="text">
+    <string>客户端</string>
+   </property>
+  </action>
+  <action name="actionHttpServer">
+   <property name="text">
+    <string>服务端</string>
+   </property>
+  </action>
+  <action name="actionHttpClient">
+   <property name="text">
+    <string>客户端</string>
+   </property>
+  </action>
+  <action name="actionDllTest">
+   <property name="text">
+    <string>动态库接口测试</string>
+   </property>
+  </action>
+  <action name="actionQtBinFileOpt">
+   <property name="text">
+    <string>Qt处理二进制</string>
+   </property>
+  </action>
+  <action name="actionStdBinFileOpt">
+   <property name="text">
+    <string>Cpp标准处理二进制</string>
+   </property>
+  </action>
+  <action name="actionUnitTest">
+   <property name="text">
+    <string>单元测试</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
